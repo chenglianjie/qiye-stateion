@@ -19,3 +19,45 @@ html, body{
     position: relative;
     top: -2px;;
 }
+.title-box{
+    width: 100%;
+}
+.small-title{
+ position: relative;
+ text-align: center;
+}
+.small-title::after{
+ content: "";
+ width:40%;
+ height: 1px;
+ display: block;
+ position:absolute;
+ background-color: black;
+ right:2%;
+ top:13px;
+}
+.small-title::before{
+    content: "";
+    width:40%;
+    height: 1px;
+    display: block;
+    position:absolute;
+    background-color: black;
+    left:2%;
+    top:13px;
+}
+
+/* 图片 */
+.img-box{
+    /* width:20%; */
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+   overflow: hidden;
+}
+.img-self{
+    width: 100%;
+    min-height:100%;
+    display: block;
+    
+}
