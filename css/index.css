@@ -1,28 +1,3 @@
-/* 清除container的padding */
-.container {
-  padding: 0;
-  margin: 0 auto;
-}
-.row {
-  margin: 0;
-  max-width: 1200px;
-}
-/* 通过媒体查询，更改最大的容器的尺寸 大于1200px时，container宽度为1200*/
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    max-width: 1200px;
-    margin-right: 0;
-    margin: 0 auto;
-  }
-}
-/* 小于1200的时候  container宽度为100%*/
-@media (max-width: 1199px) {
-  .container {
-    width: 100%;
-    max-width: 1200px;
-  }
-}
 /* 主题内容大盒子 */
 .index-main {
   width: 100%;

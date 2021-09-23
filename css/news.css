@@ -1,0 +1,106 @@
+/* footer部分 */
+.footer-top {
+  background-color: #f8f9fa;
+  padding-bottom: 20px;
+}
+.footer-msg {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  /* line-height: 100px; */
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border-bottom: 1px solid #ebeef0;
+}
+.footer-msg2 {
+  display: flex;
+  height: 80px;
+  line-height: 80px;
+  justify-content: center;
+  color: #999999;
+}
+.footer-msg div {
+  margin-right: 10px;
+}
+.img-codes {
+  width: 50px;
+  height: 50px;
+  margin: 15px 0;
+  margin-right: 10px;
+}
+.icon-bot {
+  margin-right: 5px;
+}
+.news-main {
+  padding: 0px 60px;
+}
+.row > * {
+  padding: 0;
+}
+.news-imgs {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.news-imgs img {
+  display: block;
+  width: 100%;
+  height: 108px;
+  /* height: auto; */
+}
+.new-titles-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  height: 108px;
+}
+.news-titles {
+  font-size: 14px;
+  margin: 0;
+}
+.news-keyword {
+  font-size: 12px;
+  color: #999;
+  padding-top: 10px;
+}
+.divmargin {
+  margin-bottom: 30px;
+}
+.page-item {
+  cursor: pointer;
+}
+.disabled {
+  cursor: no-drop;
+}
+/* 平板及以下时 */
+@media (max-width: 768px) {
+  .new-titles-box {
+    border: 1px solid #e6e6e6;
+    border-top: none;
+  }
+  .divmargin {
+    /* margin-bottom: 0px; */
+  }
+}
+/* 超小屏幕尺寸 */
+@media (max-width: 415px) {
+  .news-title {
+    padding: 14px 0;
+    height: 50px;
+    text-align: center;
+    /* line-height: 70px; */
+    font-size: 12px !important;
+  }
+  .img-box {
+    width: 125px;
+    height: 125px;
+  }
+  .location {
+    margin-top: 10px;
+  }
+  .tel {
+    margin-top: -25px;
+  }
+}
