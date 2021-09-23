@@ -1,63 +1,178 @@
-/* html, body{
-    width: 100vw;
-    min-height: 100vh;
-} */
-.box{
+/* 清除container的padding */
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+.row {
+  margin: 0;
+  max-width: 1200px;
+}
+/* 通过媒体查询，更改最大的容器的尺寸 大于1200px时，container宽度为1200*/
+@media (min-width: 1200px) {
+  .container {
     width: 1200px;
+    max-width: 1200px;
+    margin-right: 0;
     margin: 0 auto;
-   
+  }
 }
-@media (max-width: 1200px) {
-   .box{
-       width: 100%;
-   }
-}   
-.nav-box{
+/* 小于1200的时候  container宽度为100%*/
+@media (max-width: 1199px) {
+  .container {
     width: 100%;
+    max-width: 1200px;
+  }
 }
-.bot-icons{
-    position: relative;
-    top: -2px;;
+/* 主题内容大盒子 */
+.index-main {
+  width: 100%;
+  padding: 0 60px;
+  /* border: 1px solid red; */
 }
-.title-box{
-    width: 100%;
+.bot-icons {
+  position: relative;
+  top: -2px;
 }
-.small-title{
- position: relative;
- text-align: center;
+/* 标题样式 */
+.title-box {
+  width: 100%;
+  margin-top: 20px;
 }
-.small-title::after{
- content: "";
- width:40%;
- height: 1px;
- display: block;
- position:absolute;
- background-color: black;
- right:2%;
- top:13px;
+.small-title {
+  position: relative;
+  text-align: center;
 }
-.small-title::before{
-    content: "";
-    width:40%;
-    height: 1px;
-    display: block;
-    position:absolute;
-    background-color: black;
-    left:2%;
-    top:13px;
+.small-title::after {
+  content: "";
+  width: 43%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  background-color: #e6e6e6;
+  right: 1%;
+  top: 13px;
+}
+.small-title::before {
+  content: "";
+  width: 43%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  background-color: #e6e6e6;
+  left: 1%;
+  top: 13px;
+}
+/* 图片 */
+.img-div-box {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.img-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.img-self {
+  width: 100%;
+  min-height: 100%;
+}
+.img-title {
+  text-align: center;
 }
 
-/* 图片 */
-.img-box{
-    /* width:20%; */
-    width:125px;
-    height: 125px;
-    border-radius: 50%;
-    overflow: hidden;
+/* 人物介绍 */
+.person-box {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 20px 0px;
+  /* margin: 0 12px; */
 }
-.img-self{
-    width: 100%;
-    min-height:100%;
-    display: block;
-    
+/* 新闻 */
+.news-title {
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  height: 100px;
+  padding: 5px 10px;
+}
+/* footer部分 */
+.footer-top {
+  background-color: #f8f9fa;
+  padding-bottom: 20px;
+}
+.footer-msg {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  /* line-height: 100px; */
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border-bottom: 1px solid #ebeef0;
+}
+.footer-msg2 {
+  display: flex;
+  height: 80px;
+  line-height: 80px;
+  justify-content: center;
+  color: #999999;
+}
+.footer-msg div {
+  margin-right: 10px;
+}
+.img-codes {
+  width: 50px;
+  height: 50px;
+  margin: 15px 0;
+  margin-right: 10px;
+}
+.icon-bot {
+  margin-right: 5px;
+}
+@media (min-width: 1000px) {
+  .news-title {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+}
+/* 小屏幕时 */
+@media (max-width: 768px) {
+  .news-title {
+    padding: 10px 0;
+    height: 70px;
+    text-align: center;
+    /* line-height: 70px; */
+    font-size: 12px !important;
+  }
+  .index-main {
+    padding: 0 30px;
+  }
+  .small-title::before {
+    width: 35%;
+  }
+  .small-title::after {
+    width: 35%;
+  }
+}
+/* 超小屏幕尺寸 */
+@media (max-width: 415px) {
+  .news-title {
+    padding: 14px 0;
+    height: 50px;
+    text-align: center;
+    /* line-height: 70px; */
+    font-size: 12px !important;
+  }
+  .img-box {
+    width: 125px;
+    height: 125px;
+  }
+  .location {
+    margin-top: 10px;
+  }
+  .tel {
+    margin-top: -25px;
+  }
 }
