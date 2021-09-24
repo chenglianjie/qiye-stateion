@@ -1,4 +1,8 @@
 /* 清除container的padding */
+html,
+body {
+  height: 100%;
+}
 .container {
   padding: 0;
   margin: 0 auto;
