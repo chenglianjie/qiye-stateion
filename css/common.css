@@ -27,3 +27,19 @@ body {
     max-width: 1200px;
   }
 }
+
+/* 公共的吸底效果 */
+/* 实现吸底效果 */
+.wrapper-about {
+  box-sizing: border-box !important;
+  position: relative;
+  min-height: 100% !important;
+  padding-bottom: 180px !important;
+}
+.about-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+}
