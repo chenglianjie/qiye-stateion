@@ -57,7 +57,7 @@ axios
           <div class="col-md-4 divmargin" >
               <div class="new-titles-box">
                 <p class="news-titles">
-                    ${item.title}
+                <a href="./details.html#${item.code}">${item.title}</a>
                 </p>
                 <p class="news-keyword">${item.keyword}</p>
               </div>
