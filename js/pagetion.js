@@ -45,24 +45,22 @@ axios
     //   let pagedom = "";
     newsArr.forEach((item) => {
       doms += `
-          <div class="col-md-2" >
-          <div class="news-imgs">
-            <img
-            src="${item.img}"
-              class="img-fluid"
-              alt=""
-            />
-          </div>
-          </div>
-          <div class="col-md-4 divmargin" >
-              <div class="new-titles-box">
-                <p class="news-titles">
-                <a href="./details.html#${item.code}">${item.title}</a>
-                </p>
-                <p class="news-keyword">${item.keyword}</p>
-              </div>
-          </div>
-          `;
+      <a class="news-a-box news-img-title-box" href="./details.html#${item.code}">
+      <div class="news-imgs">
+        <img
+        src="${item.img}"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="new-titles-box">
+        <p class="news-titles">
+        ${item.title}
+        </p>
+        <p class="news-keyword">${item.keyword}</p>
+      </div>
+    </a>
+    `;
     });
     newsBox.innerHTML = doms;
   });
@@ -156,24 +154,22 @@ const pageOnchick = (e) => {
       //   let pagedom = "";
       newsArr.forEach((item) => {
         doms += `
-          <div class="col-md-2" >
-          <div class="news-imgs">
-            <img
-            src="${item.img}"
-              class="img-fluid"
-              alt=""
-            />
-          </div>
-          </div>
-          <div class="col-md-4 divmargin" >
-              <div class="new-titles-box">
-                <p class="news-titles">
-                    ${item.title}
-                </p>
-                <p class="news-keyword">${item.keyword}</p>
-              </div>
-          </div>
-          `;
+      <a class="news-a-box news-img-title-box" href="./details.html#${item.code}">
+      <div class="news-imgs">
+        <img
+        src="${item.img}"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="new-titles-box">
+        <p class="news-titles">
+        ${item.title}
+        </p>
+        <p class="news-keyword">${item.keyword}</p>
+      </div>
+    </a>
+    `;
       });
       newsBox.innerHTML = doms;
     });
