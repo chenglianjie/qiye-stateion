@@ -149,7 +149,11 @@
         </div>
         <div class="col-12">
           <div class="footer-msg2">
-            <img src="./img/qr_code.jpg" class="img-fluid img-codes" alt="" />
+            <img
+              data-src="./img/qr_code.jpg"
+              class="img-fluid lazyload img-codes"
+              alt=""
+            />
             <div class="COPY">&copy 2021 Company，Inc</div>
           </div>
         </div>
@@ -163,6 +167,8 @@
   integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
   crossorigin="anonymous"
 ></script>
+<!-- 引入图片懒加载的包 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
 <script
   type="text/javascript"
   src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=moI3Tl5fkEFDR4LdneINN9IGZ7xQAO8C"

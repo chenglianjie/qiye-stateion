@@ -48,8 +48,8 @@ axios
       <a class="news-a-box news-img-title-box" href="./details.html#${item.code}">
       <div class="news-imgs">
         <img
-        src="${item.img}"
-          class="img-fluid"
+        data-src="${item.img}"
+          class="img-fluid lazyload"
           alt=""
         />
       </div>
@@ -157,8 +157,8 @@ const pageOnchick = (e) => {
       <a class="news-a-box news-img-title-box" href="./details.html#${item.code}">
       <div class="news-imgs">
         <img
-        src="${item.img}"
-          class="img-fluid"
+        data-src="${item.img}"
+          class="img-fluid lazyload"
           alt=""
         />
       </div>
